@@ -145,5 +145,12 @@ plt.xlabel('x1')
 plt.ylabel('x2')
 plt.title('(c) Contours of y(z)')
  
+# Save all 6 plots to the same folder as this script
+import os
+outdir = os.path.dirname(os.path.abspath(__file__))
+names = ['a_points', 'a_contour', 'b_points', 'b_contour', 'c_points', 'c_contour']
+for num, name in zip(plt.get_fignums(), names):
+    plt.figure(num).savefig(os.path.join(outdir, 'hw3_q2_' + name + '.png'), dpi=150)
+
 # Show all 6 plots
 plt.show()
