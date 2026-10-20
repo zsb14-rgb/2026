@@ -154,3 +154,7 @@ for num, name in zip(plt.get_fignums(), names):
 
 # Show all 6 plots
 plt.show()
+
+# Part (a): boundary is x1^2 + x2^2 = 1 -> circle
+# Part (b): boundary is x1 + 2*x2 = 2 -> straight line
+# Part (c): boundary is (x1-0.5)^2 + 0.5*(x2-0.5)^2 = 7/8 -> shifted ellipse
